@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixelmator Pro</title>
     <link rel="stylesheet" href="estils.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Menú sticky amb efecte frozen glass -->
     <header class="header">
-        <div class="header-top">
-            <a href="#" class="logo"><img src="imatges/logo.png" alt="Pixelmator Logo"></a>
+        <div class="header-top container">
+            <a href="#" class="logo">Pixelmator Pro 3.7</a>
             <nav class="nav-top">
                 <a href="#">Pixelmator Pro</a>
                 <a href="#">Photomator</a>
@@ -18,79 +18,148 @@
                 <a href="#">Support</a>
             </nav>
         </div>
-        <div class="header-sticky">
+        <div class="header-sticky container">
             <nav class="nav-sticky">
-                <a href="#" class="active">Pixelmator Pro 3.7</a>
-                <a href="#">Overview</a>
+                <a href="#" class="btn-primary">Buy</a>
                 <a href="#">Tech Specs</a>
                 <a href="#">User Guide</a>
-                <a href="#" class="btn-buy">Buy</a>
             </nav>
         </div>
     </header>
 
-    <!-- Secció Hero -->
-    <section class="hero">
-        <div class="container">
-            <h1>Pixelmator Pro 3.7</h1>
-            <p>Pixelmator Pro is an image editor designed to make the most powerful 
-                professional image editing tools accessible to everyone. And with an 
-                extensive collection of tools for editing and retouching photos, creating 
-                graphic designs, painting, drawing vector graphics, and adding stunning effects, 
-                it’s the only image editor you’ll need.</p>
-            <a href="#" class="btn-buy-now">Buy now</a>
-        </div>
-        <img src="imatges/hero-image.jpg" alt="Hero Image" class="hero-image rounded shadow">
-    </section>
-
-    <!-- Secció amb vídeo -->
-    <section class="video-section">
-        <div class="container">
-            <h2>Descobreix Pixelmator Pro</h2>
-            <video controls class="rounded shadow">
-                <source src="imatges/video-example.mov" type="video/mp4">
-                El teu navegador no suporta l'element de vídeo.
-            </video>
-        </div>
-    </section>
-
-    <!-- Secció de vector tools -->
-    <section class="vector-section colored-bg">
-        <div class="container">
-            <h2>Draw and illustrate with a full collection of vector tools.</h2>
-            <p>Pixelmator Pro comes with a full set of vector tools for creating 
-                resolution-independent designs. It includes easily-customizable smart 
-                shapes, and support for vector file formats including PSD, SVG, PDF, 
-                Adobe Illustrator, and Illustrator EPS.</p>
-            <img src="imatges/vector-image.jpg" alt="Vector Tools" class="vector-image rounded shadow">
-        </div>
-    </section>
-
-    <!-- Secció de especificacions -->
-    <section class="specs-section white-bg">
-        <div class="container">
-            <div class="specs-content">
-                <div class="spec-item">
-                    <h3>Resolution Independent</h3>
-                    <p>Vector shapes are resolution-independent, 
-                        so curves always look smooth and edges 
-                        always stay sharp, no matter how much you 
-                        resize each shape or even entire vector designs.</p>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h1>Professional image editing tools that anyone can use.</h1>
+                    <p>Pixelmator Pro helps edit photos and create designs with easy tools.</p>
+                    <a href="#" class="btn-primary">Buy now</a>
                 </div>
-                <div class="spec-item">
-                    <h3>Vector Support</h3>
-                    <p>Pixelmator Pro supports vector file formats, including 
-                        PSD, SVG, PDF, Adobe Illustrator, and Illustrator EPS, 
-                        so you can effortlessly edit shapes and paths in these 
-                        files, and export them while keeping all their vector data.</p>
+                <div class="hero-video">
+                    <video autoplay muted loop>
+                        <source src="imatges/hero-video.mov" type="video/quicktime">
+                    </video>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
+        <!-- VECTOR TOOLS -->
+        <section class="vector-tools section">
+            <div class="container">
+                <h2>Draw with vector tools.</h2>
+                <p>Make smooth designs with vector tools and shapes.</p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <img src="imatges/resolution-icon.jpg" alt="Resolution">
+                        <h3>Resolution Independent</h3>
+                        <p>Shapes stay smooth when resized.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="imatges/vector-icon.jpg" alt="Vector">
+                        <h3>Vector Support</h3>
+                        <p>Edit files like PSD and SVG.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="imatges/smart-shapes-icon.jpg" alt="Smart Shapes">
+                        <h3>Smart Shapes</h3>
+                        <p>Add stars and shapes easily.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHOTO TOOLS -->
+        <section class="photo-tools section alt">
+            <div class="container">
+                <h2>Tools for perfect photos.</h2>
+                <p>Edit colors and enhance photos with easy adjustments.</p>
+                <div class="photo-images">
+                    <img src="imatges/photo-before.jpg" alt="Before">
+                    <img src="imatges/photo-after.jpg" alt="After">
+                </div>
+                <div class="photo-features">
+                    <div class="photo-feature">
+                        <img src="imatges/color-edit-icon.jpg" alt="Color Edit">
+                        <h3>Edit Colors</h3>
+                        <p>Change colors with simple tools.</p>
+                        <a href="#">See full list of adjustments</a>
+                    </div>
+                    <div class="photo-feature">
+                        <img src="imatges/enhance-icon.jpg" alt="Enhance">
+                        <h3>Enhance Photos</h3>
+                        <p>Improve photos automatically.</p>
+                    </div>
+                    <div class="photo-feature">
+                        <img src="imatges/raw-icon.jpg" alt="RAW">
+                        <h3>RAW Editing</h3>
+                        <p>Edit RAW photos easily.</p>
+                        <a href="#">View supported RAW formats</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESIGN TOOLS -->
+        <section class="design-tools section">
+            <div class="container">
+                <h2>Create beautiful designs.</h2>
+                <p>Use layers to make designs for posters or apps.</p>
+                <div class="design-features">
+                    <div class="design-feature">
+                        <h3>Layer-Based Editing</h3>
+                        <p>Add shapes and text easily.</p>
+                    </div>
+                    <div class="design-feature">
+                        <h3>Layer Styles</h3>
+                        <p>Add colors and shadows to layers.</p>
+                    </div>
+                </div>
+                <a href="#" class="btn-primary">See full specs</a>
+            </div>
+        </section>
+
+        <!-- WORKSPACE -->
+        <section class="workspace section alt">
+            <div class="container">
+                <h2>Choose your workspace.</h2>
+                <p>Move tools where you want them.</p>
+            </div>
+        </section>
+
+        <!-- REMOVE BG -->
+        <section class="remove-bg section">
+            <div class="container">
+                <h2>Remove backgrounds easily.</h2>
+                <p>Click to remove backgrounds with AI.</p>
+            </div>
+        </section>
+
+        <!-- MACHINE LEARNING -->
+        <section class="ml-features section alt">
+            <div class="container">
+                <h2>Editing with machine learning.</h2>
+                <p>Smart tools to edit like a pro.</p>
+                <ul class="ml-list">
+                    <li>Enhance photos automatically</li>
+                    <li>Increase image resolution</li>
+                    <li>Match photo colors</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- REPAIR TOOL -->
+        <section class="repair-tool section">
+            <div class="container">
+                <h2>Remove unwanted objects.</h2>
+                <p>Paint over objects to erase them.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Pixelmator. Tots els drets reservats.</p>
+            <p>&copy; 2025 Pixelmator Team</p>
         </div>
     </footer>
 </body>
