@@ -1,166 +1,208 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pixelmator Pro</title>
-    <link rel="stylesheet" href="estils.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Pixelmator Pro</title>
+  <meta name="description" content="Eines d'edició d'imatges professionals per a tothom.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Pixelmator Team">
+  <link rel="icon" type="image/png" href="/pro/assets/favicon/favicon-pro--v2.png" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="estils.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-top container">
-            <a href="#" class="logo">Pixelmator Pro 3.7</a>
-            <nav class="nav-top">
-                <a href="#">Pixelmator Pro</a>
-                <a href="#">Photomator</a>
-                <a href="#">Blog</a>
-                <a href="#">Support</a>
-            </nav>
+  <div class="main-nav">
+    <div class="container">
+      <nav>
+        <a href="#" class="active"><img src="/cdn-web-assets/app-icons/navigation/icon_pro-2.0--v6.png" width="24" height="24"> Pixelmator Pro</a>
+        <a href="#"><img src="/cdn-web-assets/app-icons/navigation/icon-photo-v1.png" width="24" height="24"> Photomator</a>
+        <a href="#">Blog</a>
+        <a href="#">Suport</a>
+      </nav>
+    </div>
+  </div>
+  <div class="sub-nav">
+    <div class="container">
+      <div>
+        <a href="#"><img src="/cdn-web-assets/app-icons/navigation/icon_pro-2.0--v6.png" width="24" height="24"> Pixelmator Pro 3.7</a>
+        <nav>
+          <a href="#" class="active">Visió general</a>
+          <a href="#">Especificacions tècniques</a>
+          <a href="#">Guia de l'usuari</a>
+        </nav>
+      </div>
+      <a href="#" class="buy-btn">Compra</a>
+    </div>
+  </div>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Eines d'edició d'imatges professionals per a tothom</h1>
+        <picture>
+          <source type="image/webp" srcset="/cdn-web-assets/pro/3.5/img_hero.webp 1x, /cdn-web-assets/pro/3.5/img_hero@2x.webp 2x">
+          <img src="/cdn-web-assets/pro/3.5/img_hero.jpg" srcset="/cdn-web-assets/pro/3.5/img_hero@2x.jpg 2x" width="600" height="366" alt="Hero image">
+        </picture>
+        <p>Pixelmator Pro és un editor d'imatges fàcil d'usar amb eines potents per editar fotos i crear dissenys.</p>
+        <a href="#" class="buy-btn">Compra ara</a>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Dibuixa amb eines vectorials</h2>
+        <p>Crea dissenys suaus amb eines vectorials i formes.</p>
+        <div class="features">
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/img_draw-resolution-independent.jpg" width="280" height="140" alt="Resolució independent">
+            <h3>Resolució independent</h3>
+            <p>Les formes es mantenen suaus quan es redimensionen.</p>
+          </div>
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/3.6/ico_vector-support.png" width="80" height="100" alt="Suport vectorial">
+            <h3>Suport vectorial</h3>
+            <p>Edita fitxers com PSD i SVG.</p>
+          </div>
+          <div class="feature">
+            <video width="280" height="210" autoplay muted loop>
+              <source src="/cdn-web-assets/pro/2.0/video_smart-shapes.mov" type="video/mp4">
+            </video>
+            <h3>Formes intel·ligents</h3>
+            <p>Afegeix estrelles i formes fàcilment.</p>
+          </div>
         </div>
-        <div class="header-sticky container">
-            <nav class="nav-sticky">
-                <a href="#" class="btn-primary">Buy</a>
-                <a href="#">Tech Specs</a>
-                <a href="#">User Guide</a>
-            </nav>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Eines per a fotos perfectes</h2>
+        <p>Edita colors i millora fotos amb ajustos senzills.</p>
+        <div class="features">
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/tools/ico_color-adjustments.png" width="36" height="36" alt="Editar colors">
+            <h3>Editar colors</h3>
+            <p>Canvia els colors amb eines senzilles.</p>
+            <a href="#" class="js-open-modal" data-modal="adjustments">Veure llista d'ajustos</a>
+          </div>
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/tools/ico_ml.png" width="36" height="36" alt="Millorar fotos">
+            <h3>Millorar fotos</h3>
+            <p>Millora fotos automàticament.</p>
+          </div>
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/tools/ico_raw.png" width="36" height="36" alt="Edició RAW">
+            <h3>Edició RAW</h3>
+            <p>Edita fotos RAW fàcilment.</p>
+            <a href="#">Formats RAW suportats</a>
+          </div>
         </div>
-    </header>
-
-    <main>
-        <!-- HERO -->
-        <section class="hero">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1>Professional image editing tools that anyone can use.</h1>
-                    <p>Pixelmator Pro helps edit photos and create designs with easy tools.</p>
-                    <a href="#" class="btn-primary">Buy now</a>
-                </div>
-                <div class="hero-video">
-                    <video autoplay muted loop>
-                        <source src="imatges/hero-video.mov" type="video/quicktime">
-                    </video>
-                </div>
-            </div>
-        </section>
-
-        <!-- VECTOR TOOLS -->
-        <section class="vector-tools section">
-            <div class="container">
-                <h2>Draw with vector tools.</h2>
-                <p>Make smooth designs with vector tools and shapes.</p>
-                <div class="features-grid">
-                    <div class="feature">
-                        <img src="imatges/resolution-icon.jpg" alt="Resolution">
-                        <h3>Resolution Independent</h3>
-                        <p>Shapes stay smooth when resized.</p>
-                    </div>
-                    <div class="feature">
-                        <img src="imatges/vector-icon.jpg" alt="Vector">
-                        <h3>Vector Support</h3>
-                        <p>Edit files like PSD and SVG.</p>
-                    </div>
-                    <div class="feature">
-                        <img src="imatges/smart-shapes-icon.jpg" alt="Smart Shapes">
-                        <h3>Smart Shapes</h3>
-                        <p>Add stars and shapes easily.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PHOTO TOOLS -->
-        <section class="photo-tools section alt">
-            <div class="container">
-                <h2>Tools for perfect photos.</h2>
-                <p>Edit colors and enhance photos with easy adjustments.</p>
-                <div class="photo-images">
-                    <img src="imatges/photo-before.jpg" alt="Before">
-                    <img src="imatges/photo-after.jpg" alt="After">
-                </div>
-                <div class="photo-features">
-                    <div class="photo-feature">
-                        <img src="imatges/color-edit-icon.jpg" alt="Color Edit">
-                        <h3>Edit Colors</h3>
-                        <p>Change colors with simple tools.</p>
-                        <a href="#">See full list of adjustments</a>
-                    </div>
-                    <div class="photo-feature">
-                        <img src="imatges/enhance-icon.jpg" alt="Enhance">
-                        <h3>Enhance Photos</h3>
-                        <p>Improve photos automatically.</p>
-                    </div>
-                    <div class="photo-feature">
-                        <img src="imatges/raw-icon.jpg" alt="RAW">
-                        <h3>RAW Editing</h3>
-                        <p>Edit RAW photos easily.</p>
-                        <a href="#">View supported RAW formats</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- DESIGN TOOLS -->
-        <section class="design-tools section">
-            <div class="container">
-                <h2>Create beautiful designs.</h2>
-                <p>Use layers to make designs for posters or apps.</p>
-                <div class="design-features">
-                    <div class="design-feature">
-                        <h3>Layer-Based Editing</h3>
-                        <p>Add shapes and text easily.</p>
-                    </div>
-                    <div class="design-feature">
-                        <h3>Layer Styles</h3>
-                        <p>Add colors and shadows to layers.</p>
-                    </div>
-                </div>
-                <a href="#" class="btn-primary">See full specs</a>
-            </div>
-        </section>
-
-        <!-- WORKSPACE -->
-        <section class="workspace section alt">
-            <div class="container">
-                <h2>Choose your workspace.</h2>
-                <p>Move tools where you want them.</p>
-            </div>
-        </section>
-
-        <!-- REMOVE BG -->
-        <section class="remove-bg section">
-            <div class="container">
-                <h2>Remove backgrounds easily.</h2>
-                <p>Click to remove backgrounds with AI.</p>
-            </div>
-        </section>
-
-        <!-- MACHINE LEARNING -->
-        <section class="ml-features section alt">
-            <div class="container">
-                <h2>Editing with machine learning.</h2>
-                <p>Smart tools to edit like a pro.</p>
-                <ul class="ml-list">
-                    <li>Enhance photos automatically</li>
-                    <li>Increase image resolution</li>
-                    <li>Match photo colors</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- REPAIR TOOL -->
-        <section class="repair-tool section">
-            <div class="container">
-                <h2>Remove unwanted objects.</h2>
-                <p>Paint over objects to erase them.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Pixelmator Team</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Crea dissenys bonics</h2>
+        <p>Utilitza capes per crear dissenys per a pòsters o aplicacions.</p>
+        <div class="features">
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.4/artwork/img_design-layers.jpg" width="280" height="210" alt="Edició basada en capes">
+            <h3>Edició basada en capes</h3>
+            <p>Afegeix formes i text fàcilment.</p>
+          </div>
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/img_design-layer-styles.jpg" width="280" height="60" alt="Estils de capa">
+            <h3>Estils de capa</h3>
+            <p>Afegeix colors i ombres a les capes.</p>
+          </div>
         </div>
-    </footer>
+        <a href="#" class="buy-btn">Veure especificacions completes</a>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Tria el teu espai de treball</h2>
+        <p>Mou les eines on vulguis.</p>
+        <picture>
+          <source type="image/webp" srcset="/cdn-web-assets/pro/2.4/artwork/img_workspace-photography--v2.webp 1x, /cdn-web-assets/pro/2.4/artwork/img_workspace-photography--v2@2x.webp 2x">
+          <img src="/cdn-web-assets/pro/2.4/artwork/img_workspace-photography--v2.jpg" width="600" height="360" alt="Espai de treball">
+        </picture>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Elimina fons fàcilment</h2>
+        <p>Fes clic per eliminar fons amb IA.</p>
+        <picture>
+          <source type="image/webp" srcset="/cdn-web-assets/pro/2.3/img_remove-bg.webp 1x, /cdn-web-assets/pro/2.3/img_remove-bg@2x.webp 2x">
+          <img src="/cdn-web-assets/pro/2.3/img_remove-bg.jpg" width="600" height="360" alt="Eliminar fons">
+        </picture>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Edició amb aprenentatge automàtic</h2>
+        <p>Eines intel·ligents per editar com un professional.</p>
+        <div class="features">
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/ml/img_ml-enhance.png" width="36" height="36" alt="Millora automàtica">
+            <h3>Millora automàtica</h3>
+            <p>Millora fotos automàticament.</p>
+          </div>
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/ml/img_ml-super-resolution.png" width="36" height="36" alt="Super resolució">
+            <h3>Super resolució</h3>
+            <p>Augmenta la resolució mantenint la nitidesa.</p>
+          </div>
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/ml/img_ml-match-colors.png" width="36" height="36" alt="Igualar colors">
+            <h3>Igualar colors</h3>
+            <p>Iguala els colors de qualsevol foto.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <h2>Elimina objectes no desitjats</h2>
+        <p>Pinta sobre objectes per esborrar-los.</p>
+        <video width="600" height="360" autoplay muted loop>
+          <source src="/cdn-web-assets/pro/2.0/video_repair.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+    <aside class="modal" id="adjustments-modal">
+      <div class="modal-content">
+        <span class="modal-close">X</span>
+            <img src="/cdn-web-assets/pro/2.0/color-adjustments/img_white-balance.png" width="50" height="50" alt="Balanç de blancs">
+            <h3>Balanç de blancs</h3>
+            <p>Ajusta els colors per fer-los més càlids o freds.</p>
+          </div>
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/color-adjustments/img_saturate.png" width="50" height="50" alt="To i saturació">
+            <h3>To i saturació</h3>
+            <p>Canvia els colors per fer-los més vius.</p>
+          </div>
+          <div class="feature">
+            <img src="/cdn-web-assets/pro/2.0/color-adjustments/img_levels.png" width="50" height="50" alt="Nivells">
+            <h3>Nivells</h3>
+            <p>Millora la brillantor i el contrast ràpidament.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Pixelmator Team. Tots els drets reservats.</p>
+    </div>
+  </footer>
+  <script>
+    document.querySelectorAll('.js-open-modal').forEach(button => {
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('adjustments-modal').classList.add('active');
+      });
+    });
+    document.querySelector('.modal-close').addEventListener('click', () => {
+      document.getElementById('adjustments-modal').classList.remove('active');
+    });
+  </script>
 </body>
-</html>
+</html
